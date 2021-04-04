@@ -1,4 +1,4 @@
-package tests;
+package com.tricentis.demowebshop.tests;
 
 import api.Authorization;
 import io.restassured.response.Response;

@@ -1,4 +1,4 @@
-package tests;
+package com.tricentis.demowebshop.tests;
 
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeAll;

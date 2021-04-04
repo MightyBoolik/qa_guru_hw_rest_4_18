@@ -1,4 +1,4 @@
-package api;
+package com.tricentis.demowebshop.api;
 
 import java.util.Map;
 
