@@ -1,4 +1,4 @@
-package com.tricentis.demowebshop.api;
+package Tests;
 
 import java.util.Map;
 

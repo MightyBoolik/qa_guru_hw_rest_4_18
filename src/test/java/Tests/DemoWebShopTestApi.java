@@ -1,7 +1,7 @@
-package com.tricentis.demowebshop.tests;
+package Tests;
 
-import api.Authorization;
 import io.restassured.response.Response;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.Map;
@@ -9,11 +9,12 @@ import java.util.Map;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 
-public class DemoWebShopTest extends TestBase {
+public class DemoWebShopTestApi extends TestBase {
     String body = "product_attribute_80_2_37=112&product_attribute_80_1_38=114&addtocart_80.EnteredQuantity=1",
-    content = "application/x-www-form-urlencoded; charset=UTF-8";
+            content = "application/x-www-form-urlencoded; charset=UTF-8";
 
     @Test
+    @DisplayName("Wishlist api test")
     void addedToWishListTest() {
         Response response =
                 given()
@@ -32,6 +33,7 @@ public class DemoWebShopTest extends TestBase {
     }
 
     @Test
+    @DisplayName("Wishlist with cookie api test")
     void addedToWishListWithCookieTest() {
         Map<String, String> cookies = new Authorization().login("bkuchaev@gmail.com", "43315231");
 
