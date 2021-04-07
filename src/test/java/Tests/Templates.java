@@ -16,8 +16,8 @@ public class Templates {
     }
 
     public AllureRestAssured customTemplates() {
-        FILTER.setRequestTemplate("tpl/request.ftl");
-        FILTER.setResponseTemplate("tpl/response.ftl");
+        FILTER.setRequestTemplate("request.ftl");
+        FILTER.setResponseTemplate("response.ftl");
         return FILTER;
     }
 }
