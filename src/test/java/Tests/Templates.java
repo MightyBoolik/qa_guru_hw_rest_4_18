@@ -15,7 +15,7 @@ public class Templates {
         return InitLogFilter.logFilter;
     }
 
-    public AllureRestAssured addTemplates() {
+    public AllureRestAssured customTemplates() {
         FILTER.setRequestTemplate("request.ftl");
         FILTER.setResponseTemplate("response.ftl");
         return FILTER;
