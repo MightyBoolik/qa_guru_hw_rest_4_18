@@ -23,7 +23,7 @@
 <body>
 <div><h4>Status code</h4> <#if data.responseCode??>
     <pre><code><b>${data.responseCode}</b></code></pre>
-    <#else>Unknown</#if></div>
+<#else>Unknown</#if></div>
 <#if data.url??>
 
 <div>
@@ -34,10 +34,10 @@
 <h4>Headers</h4>
 <div>
     <#list data.headers as name, value>
-    <div>
-        <pre><code><b>${name}</b>: ${value}</code></pre>
-    </div>
-</#list>
+        <div>
+            <pre><code><b>${name}</b>: ${value}</code></pre>
+        </div>
+    </#list>
 </div>
 </#if>
 
@@ -52,10 +52,10 @@
 <h4>Cookies</h4>
 <div>
     <#list data.cookies as name, value>
-    <div>
-        <pre><code><b>${name}</b>: ${value}</code></pre>
-    </div>
-</#list>
+        <div>
+            <pre><code><b>${name}</b>: ${value}</code></pre>
+        </div>
+    </#list>
 </div>
 </#if>
 </body>
