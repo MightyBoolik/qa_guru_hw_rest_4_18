@@ -20,6 +20,7 @@ public class Authorization {
                         .statusCode(302)
                         .log().body()
                         .extract().cookies();
+
     }
 }
 
